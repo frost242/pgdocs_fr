@@ -16,7 +16,7 @@
      <glossterm linkend="glossary-consistency">Cohérence</glossterm>,
      <glossterm linkend="glossary-isolation">Isolation</glossterm>, et
      <glossterm linkend="glossary-durability">Durabilité</glossterm>.
-     Cette ensemble de propriétés d'une base de données transactionnelle
+     Cet ensemble de propriétés d'une base de données transactionnelle
      ont pour objectif de garantir la validité des opérations concurrentes,
      même en cas d'erreurs ou de panne électrique, etc.
     </para>
