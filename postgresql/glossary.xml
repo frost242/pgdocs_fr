@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <appendix id="glossary">
- <title>Glossary</title>
+ <title>Glossaire</title>
  <para>
   This is a list of terms and their meaning in the context of
   <productname>PostgreSQL</productname> and relational database
@@ -12,28 +12,28 @@
    <glossterm>ACID</glossterm>
    <glossdef>
     <para>
-     <glossterm linkend="glossary-atomicity">Atomicity</glossterm>,
-     <glossterm linkend="glossary-consistency">Consistency</glossterm>,
-     <glossterm linkend="glossary-isolation">Isolation</glossterm>, and
-     <glossterm linkend="glossary-durability">Durability</glossterm>.
-     This set of properties of database transactions is intended to
-     guarantee validity in concurrent operation and even in event of
-     errors, power failures, etc.
+     <glossterm linkend="glossary-atomicity">Atomicité</glossterm>,
+     <glossterm linkend="glossary-consistency">Cohérence</glossterm>,
+     <glossterm linkend="glossary-isolation">Isolation</glossterm>, et
+     <glossterm linkend="glossary-durability">Durabilité</glossterm>.
+     Cette ensemble de propriétés d'une base de données transactionnelle
+     ont pour objectif de garantir la validité des opérations concurrentes,
+     même en cas d'erreurs ou de panne électrique, etc.
     </para>
    </glossdef>
   </glossentry>
 
   <glossentry id="glossary-aggregate">
-   <glossterm>Aggregate function</glossterm>
+   <glossterm>Fonction d'agrégat</glossterm>
    <glossdef>
     <para>
-     A <glossterm linkend="glossary-function">function</glossterm> that
-     combines (<firstterm>aggregates</firstterm>) multiple input values,
-     for example by counting, averaging or adding,
-     yielding a single output value.
+     Une <glossterm linkend="glossary-function">fonction</glossterm> qui
+     combine (<firstterm>agrège</firstterm>) plusieurs valeurs d'entrée,
+     par exemple en comptant, en calculant la moyenne ou en additionnant,
+     produisant une seule valeur de sortie.
     </para>
     <para>
-     For more information, see
+    Pour de plus amples informations, voir
      <xref linkend="functions-aggregate"/>.
     </para>
     <glossseealso otherterm="glossary-window-function" />
@@ -41,7 +41,7 @@
   </glossentry>
 
   <glossentry id="glossary-analyze">
-   <glossterm>Analyze (operation)</glossterm>
+   <glossterm>Analyze (opération)</glossterm>
    <glossdef>
     <para>
      The process of collecting statistics from data in
@@ -59,7 +59,7 @@
   </glossentry>
 
   <glossentry>
-   <glossterm>Analytic function</glossterm>
+   <glossterm>Fonction Analytique</glossterm>
    <glosssee otherterm="glossary-window-function" />
   </glossentry>
 
@@ -82,20 +82,20 @@
   </glossentry>
 
   <glossentry id="glossary-atomicity">
-   <glossterm>Atomicity</glossterm>
+   <glossterm>Atomicité</glossterm>
    <glossdef>
     <para>
-     The property of a <glossterm linkend="glossary-transaction">transaction</glossterm>
-     that either all its operations complete as a single unit or none do.
-     In addition, if a system failure occurs during the execution of a
-     transaction, no partial results are visible after recovery.
-     This is one of the <acronym>ACID</acronym> properties.
+     La propriété d'une <glossterm linkend="glossary-transaction">transaction</glossterm>
+     indiquant qu'un traitement se fait en entier ou pas du tout.
+     En complément, en cas de panne du système durant l'exécution d'une
+     transaction, aucun résultat partiel ne sera visible après la restauration.
+     Il s'agit de l'une des propriétés <acronym>ACID</acronym>.
     </para>
    </glossdef>
   </glossentry>
 
   <glossentry id="glossary-attribute">
-   <glossterm>Attribute</glossterm>
+   <glossterm>Attribut</glossterm>
    <glossdef>
     <para>
      An element with a certain name and data type found within a
@@ -294,12 +294,12 @@
   </glossentry>
 
   <glossentry id="glossary-column">
-   <glossterm>Column</glossterm>
+   <glossterm>Colonne</glossterm>
    <glossdef>
     <para>
-     An <glossterm linkend="glossary-attribute">attribute</glossterm> found in
-     a <glossterm linkend="glossary-table">table</glossterm> or
-     <glossterm linkend="glossary-view">view</glossterm>.
+     Un <glossterm linkend="glossary-attribute">attribut</glossterm> trouvé dans une
+     une <glossterm linkend="glossary-table">table</glossterm> ou une
+     <glossterm linkend="glossary-view">vue</glossterm>.
     </para>
    </glossdef>
   </glossentry>
@@ -307,22 +307,22 @@
   <glossentry id="glossary-commit">
    <glossterm>Commit</glossterm>
    <glossdef>
-    <para>
-     The act of finalizing a
-     <glossterm linkend="glossary-transaction">transaction</glossterm> within
-     the <glossterm linkend="glossary-database">database</glossterm>, which
-     makes it visible to other transactions and assures its
-     <glossterm linkend="glossary-durability">durability</glossterm>.
+   <para>
+     L'action de finaliser une 
+     <glossterm linkend="glossary-transaction">transaction</glossterm> au sein
+     de la <glossterm linkend="glossary-database">base de données</glossterm>, qui
+     la rend visible des autres transactions et qui assure sa
+     <glossterm linkend="glossary-durability">durabilité</glossterm>.
     </para>
     <para>
-     For more information, see
+     Pour de plus amples informations, voir
      <xref linkend="sql-commit"/>.
     </para>
    </glossdef>
   </glossentry>
 
   <glossentry id="glossary-concurrency">
-   <glossterm>Concurrency</glossterm>
+   <glossterm>Concurrence</glossterm>
    <glossdef>
     <para>
      The concept that multiple independent operations happen within the
@@ -335,7 +335,7 @@
   </glossentry>
 
   <glossentry id="glossary-connection">
-   <glossterm>Connection</glossterm>
+   <glossterm>Connexion</glossterm>
    <glossdef>
     <para>
      An established line of communication between a client process and a
@@ -352,7 +352,7 @@
   </glossentry>
 
   <glossentry id="glossary-consistency">
-   <glossterm>Consistency</glossterm>
+   <glossterm>Conhérence</glossterm>
    <glossdef>
     <para>
      The property that the data in the
@@ -884,18 +884,18 @@
   </glossentry>
 
   <glossentry id="glossary-materialized-view">
-   <glossterm>Materialized view</glossterm>
+   <glossterm>Vue Materialisée</glossterm>
    <glossdef>
     <para>
-     A <glossterm linkend="glossary-relation">relation</glossterm> that is
-     defined in the same way that a <glossterm linkend="glossary-view">view</glossterm>
-     is, but stores data in the same way that a
-     <glossterm linkend="glossary-table">table</glossterm> does. It cannot be
-     modified via <command>INSERT</command>, <command>UPDATE</command>, or
-     <command>DELETE</command> operations.
+     Une <glossterm linkend="glossary-relation">relation</glossterm> qui est définie
+     de la même façon qu'une <glossterm linkend="glossary-view">vue</glossterm>,
+     mais qui stocke les données de la même façon que le fait une
+     <glossterm linkend="glossary-table">table</glossterm>. Elle ne peut pas
+     être modifiée via les commandes <command>INSERT</command>,
+     <command>UPDATE</command>, ou <command>DELETE</command>.
     </para>
     <para>
-     For more information, see
+     Pour de plus amples informations, voir
      <xref linkend="sql-creatematerializedview"/>.
     </para>
    </glossdef>
@@ -904,16 +904,16 @@
   <glossentry id="glossary-mvcc">
    <glossterm>Multi-version concurrency control (MVCC)</glossterm>
    <glossdef>
-    <para>
-     A mechanism designed to allow several
-     <glossterm linkend="glossary-transaction">transactions</glossterm> to be
-     reading and writing the same rows without one process causing other
-     processes to stall.
-     In <productname>PostgreSQL</productname>, MVCC is implemented by
-     creating copies (<firstterm>versions</firstterm>) of
-     <glossterm linkend="glossary-tuple">tuples</glossterm> as they are
-     modified; after transactions that can see the old versions terminate,
-     those old versions need to be removed.
+   <para>
+     Un mécanisme conçu pour permettre à plusieurs
+     <glossterm linkend="glossary-transaction">transactions</glossterm>
+     de lire et écrire les mêmes lignes sans qu'un processus ne cause le
+     blocage d'autres processus.
+     Dans <productname>PostgreSQL</productname>, MVCC est implémenté en
+     créant des copies (<firstterm>versions</firstterm>) de
+     <glossterm linkend="glossary-tuple">tuples</glossterm> à chaque modifications;
+     modified; dès lors que les transactions qui peuvent voir les anciennes versions se
+     se terminent, ces anciennes versions doivent être supprimées.
     </para>
    </glossdef>
   </glossentry>
@@ -929,7 +929,7 @@
   </glossentry>
 
   <glossentry>
-   <glossterm>Optimizer</glossterm>
+   <glossterm>Optimiseur</glossterm>
    <glosssee otherterm="glossary-planner" />
   </glossentry>
 
@@ -999,7 +999,7 @@
   </glossentry>
 
   <glossentry id="glossary-primary-server">
-   <glossterm>Primary (server)</glossterm>
+   <glossterm>Primaire (serveur)</glossterm>
    <glossdef>
     <para>
      When two or more <glossterm linkend="glossary-database">databases</glossterm>
@@ -1013,21 +1013,21 @@
   </glossentry>
 
   <glossentry id="glossary-primary-key">
-   <glossterm>Primary key</glossterm>
+   <glossterm>Clé primaire</glossterm>
    <glossdef>
-    <para>
-     A special case of a
-     <glossterm linkend="glossary-unique-constraint">unique constraint</glossterm>
-     defined on a
-     <glossterm linkend="glossary-table">table</glossterm> or other
-     <glossterm linkend="glossary-relation">relation</glossterm> that also
-     guarantees that all of the
-     <glossterm linkend="glossary-attribute">attributes</glossterm>
-     within the <glossterm linkend="glossary-primary-key">primary key</glossterm>
-     do not have <glossterm linkend="glossary-null">null</glossterm> values.
-     As the name implies, there can be only one
-     primary key per table, though it is possible to have multiple unique
-     constraints that also have no null-capable attributes.
+   <para>
+     Un cas particulier de
+     <glossterm linkend="glossary-unique-constraint">constrainte d'unicité</glossterm>
+     définie sur une
+     <glossterm linkend="glossary-table">table</glossterm> ou une autre
+     <glossterm linkend="glossary-relation">relation</glossterm> qui permet de
+     guarantir que tous les
+     <glossterm linkend="glossary-attribute">attributs</glossterm>
+     composants la <glossterm linkend="glossary-primary-key">clé primaire</glossterm>
+     n'ont aucune valeur <glossterm linkend="glossary-null">null</glossterm>.
+     Comme son nom l'indique, il ne peut y avoir qu'une seule clé primaire
+     par table, bien qu'il soit possible d'avoir plusieurs contraintes
+     d'unicité qui interdise également les attributs null.
     </para>
    </glossdef>
   </glossentry>
